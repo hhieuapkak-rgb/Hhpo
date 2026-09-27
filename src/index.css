@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0F172A;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes shakeDice {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  20% { transform: translate3d(-8px, -6px, 0) rotate(-6deg); }
+  40% { transform: translate3d(8px, 4px, 0) rotate(6deg); }
+  60% { transform: translate3d(-6px, 5px, 0) rotate(-4deg); }
+  80% { transform: translate3d(6px, -4px, 0) rotate(4deg); }
+}
+
+.animate-shake-dice {
+  animation: shakeDice 0.35s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+

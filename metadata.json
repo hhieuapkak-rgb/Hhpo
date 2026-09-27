@@ -1,0 +1,6 @@
+{
+  "name": "Kiếp Nhân Sinh VN: Lập Nghiệp & Đỏ Đen",
+  "description": "Game mô phỏng cuộc sống mưu sinh ở Việt Nam với hình ảnh minh họa đặc sắc, hệ thống công việc, nhà trọ, vay ngân hàng, bốc bát họ và chiếu bạc 3 Cây, Liêng, Tài Xỉu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
